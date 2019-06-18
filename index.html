@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>CSS Variable Editor</title>
+        <link rel="stylesheet" href="styles.css">
+        <link href="https://fonts.googleapis.com/css?family=Libre+Baskerville&display=swap" rel="stylesheet"> 
+    </head>
+    <body>
+        <div id="header">
+            <h1>CSS <span class="highlight">Variable</span> Editor</h1>
+            <p>(Uses plain JavaScript to update CSS variables given the input values.)</p>
+        </div>
+
+        <div id="target"></div>
+
+        <div id="settings">
+            <label for="border">Border size:</label>
+            <input type="range" mix="0" max="20" name="border" id="border" data-suffix="px" value="0">
+            <label for="blur">Blur amount:</label>
+            <input type="range" mix="0" max="20" name="blur" id="blur" data-suffix="px" value="0">
+            <label for="color">Color:</label>
+            <input type="color" name="color" id="color" value="0">
+        </div>
+
+        <script src="script.js"></script>
+    </body>
+</html>

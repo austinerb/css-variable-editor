@@ -1,0 +1,71 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    color: #2c3238;
+}
+
+:root {
+    --border: 0;
+    --blur: 0;
+    --color: #4d4d40;
+}
+
+body {
+    background-color: #2c3238;
+    min-height: 100vh;
+}
+
+#header {
+    width: 500px;
+    background-color: #d2d5d9;
+    text-align: center;
+    padding: 20px;
+    margin: 30px auto;
+    border-radius: 5px;
+}
+
+h1 {
+    margin-bottom: 5px;
+    font-family: "Libre Baskerville";
+    font-size: 40px;
+}
+
+#target {
+    width: 500px;
+    height: 400px;
+    background-image: url("https://drscdn.500px.org/photo/76092365/m%3D900/v2?webp=true&sig=6ebb197bd0bca92b2992285c273c31123ccd25d97674d8cb6cefa77767bdb575");
+    background-size: cover;
+    color: var(--color);
+    border: var(--border) solid var(--color);
+    filter: blur(var(--blur));
+    margin: 0 auto 30px;
+    border-radius: 5px;
+}
+
+#settings {
+    text-align: center;
+    background-color: #d2d5d9;
+    width: 730px;
+    margin: 0 auto;
+    padding: 25px;
+    border-radius: 5px;
+}
+
+label, input {
+    vertical-align: middle;
+}
+
+input {
+    margin-right: 25px;
+    font-weight: bold;
+    color: rgb(34, 34, 34);
+}
+
+input:last-of-type {
+    margin-right: 0;
+}
+
+.highlight {
+    color: var(--color);
+}
